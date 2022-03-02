@@ -1,0 +1,26 @@
+{% extends 'site/base.html' %}
+
+{% block content %}
+    <main class="layout layout--3">
+      <div class="container">
+
+
+
+        <!-- Topics Start -->
+        {% include 'site/topicComponent.html' %}
+
+        <!-- Topics End -->
+
+        <!-- Room List Start -->
+
+        {% include 'site/feedComponent.html' %}
+ 
+        <!-- Room List End -->
+
+        <!-- Activities Start -->
+        {% include 'site/activityComponent.html' %}
+
+        <!-- Activities End -->
+      </div>
+    </main>
+{% endblock %}

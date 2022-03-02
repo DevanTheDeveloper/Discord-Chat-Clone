@@ -1,0 +1,23 @@
+{% extends 'site/base.html' %}
+{% block content %}
+
+<div>
+	<form method='POST' action="">
+		{% csrf_token %}
+		{{form.as_p}}
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+
+{% endblock %}
+
+
+##another 
+
+           {% for field in form %}
+            <div class="form__group">
+              <label for="room_name">{{ field.label }}</label>
+              {{ field }}
+            </div>
+            {% endfor %}

@@ -1,0 +1,12 @@
+		<div class='topic-wrapper'>
+			<h3> Browse Topics </h3>
+			<hr>
+
+			{% for topic in topics %}
+				<div>
+					
+					<a href='{% url "index"%}?q={{topic.name}}'>{{topic}}</a>
+				</div>
+
+			{% endfor %}
+		</div>
